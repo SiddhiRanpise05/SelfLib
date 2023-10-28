@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Navigation Bar</title>
+  <style>
+
+  .navbar{
+      display: flex;
+      align-items: center;
+      background-color: rgba(0,0,0,0.8);
+      position: relative;
+      height: 100px;
+      width: 100%;
+      background:black;
+      color: white;
+      justify-content: space-around;
+      background-size: cover;
+      box-sizing: border-box;
+      margin: 0;
+
+  }
+
+  header{
+      width:100%;
+      height:100vh;
+      background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),
+        url('books1.jpg');
+      background-size:cover;
+      font-family: sans-serif;
+  }
+
+  body {
+   margin: 0;
+   padding: 0;
+}
+
+  .navbar ul{
+      display: flex;
+      list-style: none;
+      margin: 0px;
+      font-family: century;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin: 0;
+  }
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      padding: 8px 25px;
+      transition: all 0.5s ease;
+
+    }
+
+    .dropdown {
+
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 1.1rem;
+      font-weight: bold;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 8px 25px;
+      background-color: inherit;
+      font-family: century;
+
+    }
+
+    .navbar a:hover{
+      background-color: white;
+      color: black;
+      box-shadow: 0 0 10px white;
+    }
+    .dropdown:hover .dropbtn {
+      background-color: white;
+      color: black;
+      box-shadow: 0 0 10px white;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 8px 25px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .h-txt{
+      max-width: 650px;
+      position: absolute;
+      top: 50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      color: white;
+    }
+    .h-txt span{
+      font-size: 3em;
+      letter-spacing: 5px;
+    }
+    .h-txt h1{
+      font-size: 3.5em;
+    }
+    .h-txt a{
+      text-decoration: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 20px;
+      background: black;
+      color: white;
+      letter-spacing: 5px;
+      transition: 0.4s;
+    }
+    .h-txt a:hover{
+      background: white;
+      border:1px solid black;
+      box-shadow: 0 0 10px white;
+      color: black;
+
+
+
+  </style>
+
+  <style>
+    .pdf-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .pdf-item {
+      width: 50%;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+
+
+  <nav class="navbar">
+    <ul>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <div class="dropdown">
+      <button class="dropbtn">Login</button>
+      <div class="dropdown-content">
+        <a href="user.html">User</a>
+        <a href="admin.html">Admin</a>
+      </div>
+    </div>
+  </ul>
+  </nav>
+  <section class="h-txt">
+    <span>Read Like </span>
+    <h1>There's no tomorrow </h1>
+    <br />
+    <a href="user.html">Get Started!</a>
+
+  </section>
+
+
+  </header>
+</body>
+
+</html>
